@@ -1,0 +1,67 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: silver;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    align-self: center;
+    margin-top: 150px;
+    border-radius: 15px;
+  }
+
+  .grid-container > input {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item-zero {
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+
+  #grid-item-display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: black !important;
+    color: white !important;
+    height: 70px;
+    
+  }
+
+  .grid-item-AC {
+      grid-column-start: 1;
+      grid-column-end: 4;
+  }
+
+  .grid-item-divide {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  p {
+    color: white;
+    text-align: right;
+    border: 2px solid red;
+  }
+
+  input:hover {
+      
+}
