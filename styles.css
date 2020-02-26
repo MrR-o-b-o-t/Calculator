@@ -32,7 +32,7 @@
     text-align: center;
   }
 
-  .grid-item-zero {
+  #zero {
       grid-column-start: 1;
       grid-column-end: 3;
   }
@@ -43,15 +43,18 @@
     background-color: black !important;
     color: white !important;
     height: 70px;
-    
+    text-align: right;
+    font-size: 26px;
+    line-height: 70px;
+    padding-right: 10px;
   }
 
-  .grid-item-AC {
+  #AC {
       grid-column-start: 1;
       grid-column-end: 4;
   }
 
-  .grid-item-divide {
+  #divide {
     grid-column-start: 4;
     grid-column-end: 5;
   }
