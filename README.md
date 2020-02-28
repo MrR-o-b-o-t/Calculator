@@ -12,7 +12,7 @@ See it [here](https://web-dev-jr.github.io/Clock-App/)
   
 ## Summary
 
-This project was a turning point for me. Everyone builds a calculator app, but not many do so only using vanilla JavaScript. I wanted to push myself out of my comfort zone and dive deeper into JavaScript and my overall ability to use logic to solve problems, and write clean code. So, I built this calculator! This calculator allows you to perform addition, multiplication, division, and subtraction using multiple digits, and allows the use of decimal points. 
+This project was a turning point for me. Everyone builds a calculator app, but not many do so only using vanilla JavaScript. I wanted to push myself out of my comfort zone and dive deeper into JavaScript, my overall ability to use logic to solve problems, and write clean code. So, I built this calculator! This calculator allows you to perform addition, multiplication, division, and subtraction using multiple digits, and allows the use of decimal points. 
 
 ## Author
 
