@@ -1,17 +1,30 @@
 let num1;
 let num2;
 let operator;
-let doubleDigNum = true;
+
 
 const numberButtons = document.querySelectorAll('.keys');
 
 numberButtons.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-        x = e.target.value
+        let setDisplay = document.getElementById('grid-item-display').innerHTML
+        if (setDisplay == '' || 0) {
+            setDisplay = e.target.value
+        } else {
+            setDisplay = setDisplay + e.target.value;
+        }
+
+
+        let x = e.target.value
         document.getElementById('grid-item-display').innerHTML = x;
 
-        if (operator === undefined) { num1 = x }
-        else if (operator !== undefined) { num2 = x }
+        if (operator === undefined) {
+            num1 = x;
+        } else if (operator !== undefined) {
+            num2 = x
+        } else if (num1 != null && operator == undefined) {
+            num1 = num1 + x;
+        }
     })
 });
 
