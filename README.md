@@ -5,7 +5,7 @@
 _A calculator application built with pure JavaScript, HTML, and CSS. No tutorials here :)_
 
 <br>
-See it [here](https://web-dev-jr.github.io/Clock-App/)
+See it [here](https://web-dev-jr.github.io/Calculator/)
 <br>
 <br>
 <image src="images/calculator.PNG">
