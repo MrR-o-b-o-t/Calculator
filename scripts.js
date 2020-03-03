@@ -42,19 +42,19 @@ numValues.forEach(function (e) {
 function calculate() {
     if (operator === '+') {
         let result = num1 + num2
-        document.getElementById('grid-item-display').innerText = result;
+        document.getElementById('grid-item-display').innerText = +result.toFixed(3);
         num1 = result
     } else if (operator === '-') {
         let result = num1 - num2
-        document.getElementById('grid-item-display').innerText = result;
+        document.getElementById('grid-item-display').innerText = +result.toFixed(3);
         num1 = result
     } else if (operator === '/') {
         let result = num1 / num2
-        document.getElementById('grid-item-display').innerText = result;
+        document.getElementById('grid-item-display').innerText = +result.toFixed(3);
         num1 = result
     } else if (operator === 'x') {
         let result = num1 * num2
-        document.getElementById('grid-item-display').innerText = result;
+        document.getElementById('grid-item-display').innerText = +result.toFixed(3);
         num1 = result
     }
 }
