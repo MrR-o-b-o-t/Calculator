@@ -1,29 +1,17 @@
 let num1;
 let num2;
 let operator;
-
+// let displayValue = document.getElementById('grid-item-display')
 
 const numberButtons = document.querySelectorAll('.keys');
 
 numberButtons.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-        let setDisplay = document.getElementById('grid-item-display').innerHTML
-        if (setDisplay == '' || 0) {
-            setDisplay = e.target.value
+        setDisplay = document.getElementById('grid-item-display')
+        if (setDisplay.innerText == '' || setDisplay.innerText == 0) {
+            setDisplay.innerText = e.target.value
         } else {
-            setDisplay = setDisplay + e.target.value;
-        }
-
-
-        let x = e.target.value
-        document.getElementById('grid-item-display').innerHTML = x;
-
-        if (operator === undefined) {
-            num1 = x;
-        } else if (operator !== undefined) {
-            num2 = x
-        } else if (num1 != null && operator == undefined) {
-            num1 = num1 + x;
+            setDisplay.innerText = setDisplay.innerText + e.target.value;
         }
     })
 });
@@ -32,29 +20,48 @@ const operators = document.querySelectorAll('.operator-keys');
 
 operators.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
-        x = e.target.value
-        return operator = x
+        let operatorValue = e.target.value
+        operator = operatorValue
+        setDisplay.innerText = ''
+    })
+});
+
+const numValues = document.querySelectorAll('.keys');
+
+numValues.forEach(function (e) {
+    e.addEventListener('click', function () {
+        let number = setDisplay.innerText
+        if (operator === undefined) {
+            num1 = parseFloat(number)
+            console.log(typeof (num1))
+        } else if (num1 !== null && operator !== undefined) {
+            num2 = parseFloat(number)
+        }
     })
 });
 
 function calculate() {
     if (operator === '+') {
-        let result = parseInt(num1) + parseInt(num2)
-        document.getElementById('grid-item-display').innerHTML = result;
+        let result = num1 + num2
+        document.getElementById('grid-item-display').innerText = result;
+        num1 = result
     } else if (operator === '-') {
-        let result = parseInt(num1) - parseInt(num2)
-        document.getElementById('grid-item-display').innerHTML = result;
+        let result = num1 - num2
+        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        num1 = result
     } else if (operator === '/') {
-        let result = parseInt(num1) / parseInt(num2)
-        document.getElementById('grid-item-display').innerHTML = result;
+        let result = num1 / num2
+        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        num1 = result
     } else if (operator === 'x') {
-        let result = parseInt(num1) * parseInt(num2)
-        document.getElementById('grid-item-display').innerHTML = result;
+        let result = num1 * num2
+        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        num1 = result
     }
 }
 
 function allClear() {
-    document.getElementById('grid-item-display').innerHTML = ''
+    document.getElementById('grid-item-display').innerText = ''
     num1 = null;
     num2 = null;
     operator = undefined;
