@@ -2,7 +2,7 @@
 
 <br>
 
-_A calculator application built with pure JavaScript, HTML, and CSS. No tutorials here :)_
+_A calculator application built with pure JavaScript, HTML, and CSS. No tutorials or eval() here :)_
 
 <br>
 See it [here](https://web-dev-jr.github.io/Calculator/)
