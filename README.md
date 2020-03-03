@@ -8,7 +8,7 @@ _A calculator application built with pure JavaScript, HTML, and CSS. No tutorial
 See it [here](https://web-dev-jr.github.io/Clock-App/)
 <br>
 <br>
-<image src="images/digital-clock.PNG">
+<image src="images/calculator.PNG">
   
 ## Summary
 
