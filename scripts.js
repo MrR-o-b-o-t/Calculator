@@ -1,7 +1,6 @@
 let num1;
 let num2;
 let operator;
-// let displayValue = document.getElementById('grid-item-display')
 
 const numberButtons = document.querySelectorAll('.keys');
 
@@ -47,15 +46,15 @@ function calculate() {
         num1 = result
     } else if (operator === '-') {
         let result = num1 - num2
-        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        document.getElementById('grid-item-display').innerText = result;
         num1 = result
     } else if (operator === '/') {
         let result = num1 / num2
-        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        document.getElementById('grid-item-display').innerText = result;
         num1 = result
     } else if (operator === 'x') {
         let result = num1 * num2
-        document.getElementById('grid-item-display').innerText = result.toFixed(3);
+        document.getElementById('grid-item-display').innerText = result;
         num1 = result
     }
 }
