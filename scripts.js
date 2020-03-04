@@ -60,7 +60,7 @@ function calculate() {
 }
 
 function allClear() {
-    document.getElementById('grid-item-display').innerText = ''
+    document.getElementById('grid-item-display').innerText = '0'
     num1 = null;
     num2 = null;
     operator = undefined;
